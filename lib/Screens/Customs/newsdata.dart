@@ -1,25 +1,19 @@
 import 'package:news_app/Screens/Customs/category_model.dart';
 
 List<CategoryModel> getcategories() {
-  List<CategoryModel> category = [];
+  return [
+    CategoryModel(image: "images/busniess.png", categoryname: "Busniess"),
+    CategoryModel(image: "images/entertain.png", categoryname: "Entertaiments"),
+    CategoryModel(image: "images/health.png", categoryname: "Health"),
+    CategoryModel(image: "images/sports.png", categoryname: "Sports"),
+  ];
+}
 
-  CategoryModel categorymodel = CategoryModel();
-
-  categorymodel.categoryname = "Busniess";
-  categorymodel.image = "images/Busniess.png";
-  category.add(CategoryModel());
-
-  categorymodel.categoryname = "Entertainments";
-  categorymodel.image = "images/entertainments.png";
-  category.add(CategoryModel());
-
-  categorymodel.categoryname = "Health";
-  categorymodel.image = "images/health.png";
-  category.add(CategoryModel());
-
-  categorymodel.categoryname = "Sports";
-  categorymodel.image = "images/sports.png";
-  category.add(CategoryModel());
-
-  return category;
+List<Carosulslider> getcarsolimages() {
+  return [
+    Carosulslider(images: "images/busniess.png", names: "Busniess"),
+    Carosulslider(images: "images/entertain.png", names: "Entertaiments"),
+    Carosulslider(images: "images/health.png", names: "Health"),
+    Carosulslider(images: "images/sports.png", names: "Sports"),
+  ];
 }
